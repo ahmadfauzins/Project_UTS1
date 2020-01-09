@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.fauzi.project_final.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/result"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:fontFamily="@font/robotobold"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/headertext"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/note"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvNim"
+                    android:text="@string/nim"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/robotolight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:text="@string/nama"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/robotolight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:id="@+id/tvJk"
+                    android:text="@string/jk"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/robotolight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:id="@+id/tvTempat"
+                    android:text="@string/tempat"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/robotolight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:id="@+id/tvTgl"
+                    android:text="@string/tgl"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/robotolight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <Button
+                android:id="@+id/keluar"
+                android:layout_width="204dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_button"
+                android:fontFamily="@font/robotobold"
+                android:text="Keluar"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/project"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:fontFamily="@font/robotolight"
+            />        android:textSize="18dp"
+
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

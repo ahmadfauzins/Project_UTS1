@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.fauzi.project_final.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/form"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:fontFamily="@font/robotobold"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/headertext"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nim"
+                android:textSize="18dp"
+                android:textColor="@color/maintext"
+                android:fontFamily="@font/robotolight"
+
+                />
+            <EditText
+                android:id="@+id/nim"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/bg_edit"
+                android:fontFamily="@font/robotolight"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Masukan NIM"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                android:textSize="18dp"
+                android:textColor="@color/maintext"
+                android:fontFamily="@font/robotolight"
+
+                />
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edit"
+                android:fontFamily="@font/robotolight"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:hint="Masukan Nama"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jk"
+                android:textSize="18dp"
+                android:textColor="@color/maintext"
+                android:fontFamily="@font/robotolight"
+                />
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/jeka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                    <RadioButton
+                    android:text="Laki-Laki"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/robotolight"
+                    android:textColor="@color/maintext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                    <RadioButton
+                    android:layout_marginLeft="40dp"
+                    android:text="Perempuan"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/robotolight"
+                    android:textColor="@color/maintext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tempat"
+                android:textSize="18dp"
+                android:textColor="@color/maintext"
+                android:fontFamily="@font/robotolight"
+
+                />
+            <EditText
+                android:id="@+id/tempat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edit"
+                android:fontFamily="@font/robotolight"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:hint="Masukan Kota/Kabupaten"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tgl"
+                android:textSize="18dp"
+                android:textColor="@color/maintext"
+                android:fontFamily="@font/robotolight"
+
+                />
+            <EditText
+                android:id="@+id/tgl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edit"
+                android:fontFamily="@font/robotolight"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:hint="Masukan Tanggal Lahir (dd/mm/yyyy)"/>
+
+                <!--<CalendarView-->
+                    <!--android:id="@+id/tgl2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+
+                    <!--/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="204dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_button"
+                android:fontFamily="@font/robotobold"
+                android:text="SIMPAN"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/project"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:fontFamily="@font/robotolight"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
